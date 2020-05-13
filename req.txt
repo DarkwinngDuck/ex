@@ -1,0 +1,11 @@
+Webpack
+    Babel
+    Scss
+    EsLint
+        -dev (server, sourcemaps, eslint, not minified js, css)
+        -prod (minified code)
+Git
+    prod
+        1.0.0
+    dev
+        1.0.1
