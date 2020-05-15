@@ -21,5 +21,24 @@ module.exports = {
         new MiniCssExtractWebpackPlugin({
             filename: 'bundle.[hash].css'
         }),
-    ]
+    ],
+    resolve: {
+        extensions: ['.js'],
+        alias: {
+            '@': path.resolve(__dirname, 'lib'),
+            '@core': path.resolve(__dirname, 'lib/core'),
+        }
+    },
+    module: {
+        rules: [
+            {
+              test: /\.s[ac]ss$/i,
+              use: [
+                 MiniCssExtractWebpackPlugin.loader,
+                'css-loader',
+                'sass-loader'
+              ],
+            },
+          ],
+    }
 }
