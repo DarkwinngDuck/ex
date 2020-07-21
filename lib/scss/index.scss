@@ -1,0 +1,26 @@
+@import "~normalize.css";
+@import "./variables";
+@import "./mixins";
+
+@import "./table";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.excel {
+  position: relative;
+  color: #888;
+  height: 100%;
+  max-width: 100%;
+  font-size: .8rem;
+}
+
+
